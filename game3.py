@@ -57,6 +57,12 @@ class Fighter:
        
             
 class Game:
+    def __init__(self) -> None:
+        pass
+    
+    def __str__(self) -> str:
+        return "თამაში დაიწყო"
+    
     def __init__(self):
         self.enemy = [Fighter("Goblin", 25),
                       Fighter("ბესო", 35),
@@ -70,6 +76,7 @@ class Game:
                       ] 
         
     def start(self):
+        
         ga = int(input("1) PvP\n2)PvE: "))
         print("************")
         a = input(f"შეიყვანეთ სახეილი: ")
@@ -163,11 +170,12 @@ class Game:
                     print(f"{fi1.get_name()} is dead and {rand_enemy.get_name()} won with HP: {rand_enemy.health}")
                     break
         else:
-            print(f"უნდა შეიყბანოთ ან 1 ან 2")
+            print(f"უნდა შეიყვანოთ ან 1 ან 2")
         
 story = Story()
 print(story)                   
 game = Game()
+print(game)
 game.start()
 
 
