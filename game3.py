@@ -78,6 +78,10 @@ class Game:
     def start(self):
         
         ga = int(input("1) PvP\n2)PvE: "))
+        while ga != 1 and ga != 2: 
+            ba = int(input("უნდა შეიყვანოთ ან 1 ან 2: "))
+            ga = ba
+        
         print("************")
         a = input(f"შეიყვანეთ სახეილი: ")
         b  = int(input(f"შეიყვანეთ ძალა: "))
@@ -169,8 +173,8 @@ class Game:
                 if fi1.health <= 0:
                     print(f"{fi1.get_name()} is dead and {rand_enemy.get_name()} won with HP: {rand_enemy.health}")
                     break
-        else:
-            print(f"უნდა შეიყვანოთ ან 1 ან 2")
+       
+           
         
 story = Story()
 print(story)                   
