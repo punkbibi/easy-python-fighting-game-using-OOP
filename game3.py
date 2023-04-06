@@ -64,7 +64,8 @@ class Game:
                       Fighter("წავი", 1, 50),
                       Fighter("ქაიხოსრო", 35, 5),
                       Fighter("ვაშლი",0),
-                      Fighter("კრიტიკოსი", 0, 100)
+                      Fighter("კრიტიკოსი", 0, 100),
+                      Fighter("მობამბა", 90)
                       ] 
         
     def start(self):
