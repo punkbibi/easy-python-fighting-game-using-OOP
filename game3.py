@@ -57,12 +57,6 @@ class Fighter:
        
             
 class Game:
-    def __init__(self) -> None:
-        pass
-    
-    def __str__(self) -> str:
-        return "თამაში დაიწყო"
-    
     def __init__(self):
         self.enemy = [Fighter("Goblin", 25),
                       Fighter("ბესო", 35),
@@ -74,6 +68,12 @@ class Game:
                       Fighter("ცეცხლი", 5),
                       Fighter("მობამბა", 90)
                       ] 
+    
+    
+    def __str__(self) -> str:
+        return "თამაში დაიწყო"
+    
+    
         
     def start(self):
         
