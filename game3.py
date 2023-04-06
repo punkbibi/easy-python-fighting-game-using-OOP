@@ -65,6 +65,7 @@ class Game:
                       Fighter("ქაიხოსრო", 35, 5),
                       Fighter("ვაშლი",0),
                       Fighter("კრიტიკოსი", 0, 100),
+                      Fighter("ცეცხლი", 5),
                       Fighter("მობამბა", 90)
                       ] 
         
